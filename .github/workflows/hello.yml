@@ -13,10 +13,10 @@ jobs:
         run: echo "Hello World!"
       - name: Run A Multi-Line Script
         run: |
-        echo "Hello $MY_ENV"
-        echo "Hello $GITHUB_ACTOR"
+          echo "Hello $MY_ENV"
+          echo "Hello $GITHUB_ACTOR"
           
         # List all files in the current directory for comparison before and after actions/checkout@v2.
-  - run: ls -l
-  - uses: actions/checkout@v2
-  - run: ls -l
+      - run: ls -l
+      - uses: actions/checkout@v2
+      - run: ls -l
