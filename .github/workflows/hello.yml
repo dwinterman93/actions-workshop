@@ -7,7 +7,7 @@ jobs:
   greet:
     env:
       MY_ENV: "Caescarna"
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Greet the User
         run: echo "Hello World!"
